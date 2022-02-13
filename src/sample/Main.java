@@ -5,15 +5,21 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.image.Image;
+
+import java.awt.*;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+
+        Parent root = FXMLLoader.load(getClass().getResource("MenuScene.fxml"));
         primaryStage.setTitle("Cultural Accomplishment's");
-        System.out.println("Hello");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        Image main_icone = new Image("Icons/main_icone.PNG");
+        primaryStage.getIcons().add(main_icone);
+
+        primaryStage.setScene(new Scene(root, 600, 575));
         primaryStage.show();
     }
 
