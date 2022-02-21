@@ -1,0 +1,26 @@
+.backgroundColor{
+    -fx-background-color: linear-gradient(#90dbf4,#f1c0e8);
+}
+.button_basic{
+ -fx-background-color: linear-gradient(to bottom left,#f78361,#f54b64);
+}
+
+.button_round{
+ -fx-background-color: linear-gradient(to bottom left,#f78361,#f54b64);
+  border-radius:50%;
+}
+.search-box{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 100;
+}
+.film-box{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 25;
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);
+}

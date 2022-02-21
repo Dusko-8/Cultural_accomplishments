@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane prefHeight="694.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FilmScene_Controller">
+   <children>
+      <BorderPane layoutX="223.0" layoutY="82.0" prefHeight="498.0" prefWidth="726.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="643.0" prefWidth="376.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="TOP_CENTER" text="FILM">
+                           <font>
+                              <Font name="Lucida Console" size="48.0" />
+                           </font>
+                           <textFill>
+                              <RadialGradient centerX="0.38950276243093923" centerY="0.5379146919431279" radius="0.5">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.9018640518188477" green="0.34539473056793213" blue="0.9210526347160339" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.007662835249042145">
+                                       <color>
+                                          <Color red="0.7332175970077515" green="0.2465277761220932" blue="0.75" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.6779239246356199">
+                                       <color>
+                                          <Color red="0.9647058844566345" green="0.38823530077934265" blue="0.38823530077934265" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.9647058844566345" green="0.38823530077934265" blue="0.7490196228027344" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </RadialGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="90.0" prefWidth="276.0" stylesheets="@../main/style.css">
+                     <children>
+                        <TextField prefHeight="40.0" prefWidth="200.0" promptText="Type here" stylesheets="@../main/style.css">
+                           <styleClass>
+                              <String fx:value="transparent" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </TextField>
+                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="68.0" styleClass="button_basic" stylesheets="@../main/style.css" text="Search" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="336.0" styleClass="film-box" stylesheets="@../main/style.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="68.0" prefWidth="323.0">
+                           <children>
+                              <Label alignment="BOTTOM_CENTER" prefHeight="74.0" prefWidth="323.0" text="Harry Potter ">
+                                 <font>
+                                    <Font name="Lucida Handwriting Italic" size="28.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="323.0">
+                           <children>
+                              <Label prefHeight="23.0" prefWidth="110.0" text="Producer&gt;">
+                                 <font>
+                                    <Font name="Lucida Handwriting Italic" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dusan sluka" textAlignment="RIGHT" wrappingWidth="148.7314453125">
+                                 <font>
+                                    <Font name="Lucida Sans Unicode" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_LEFT" prefHeight="0.0" prefWidth="323.0">
+                           <children>
+                              <Label prefHeight="23.0" prefWidth="110.0" text="Leangth&gt;">
+                                 <font>
+                                    <Font name="Lucida Handwriting Italic" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1H 36MIN" textAlignment="RIGHT" wrappingWidth="146.7099609375">
+                                 <font>
+                                    <Font name="Lucida Sans Unicode" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_LEFT" prefHeight="0.0" prefWidth="323.0">
+                           <children>
+                              <Label prefHeight="23.0" prefWidth="110.0" text="Where&gt;">
+                                 <font>
+                                    <Font name="Lucida Handwriting Italic" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cinema" textAlignment="RIGHT" wrappingWidth="147.0234375">
+                                 <font>
+                                    <Font name="Lucida Sans Unicode" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="179.0" prefWidth="308.0">
+                           <children>
+                              <ImageView fitHeight="181.0" fitWidth="188.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Harry.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="33.0" prefWidth="308.0">
+                           <children>
+                              <Rating />
+                           </children></HBox>
+                        <HBox alignment="CENTER" prefHeight="107.0" prefWidth="336.0">
+                           <children>
+                              <TextArea prefHeight="107.0" prefWidth="272.0" promptText="Write here..." styleClass="transparent" stylesheets="@../main/style.css" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="25.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane maxWidth="-Infinity" prefHeight="689.0" prefWidth="647.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="AddFilm_Btn" buttonType="RAISED" layoutX="411.0" layoutY="11.0" prefHeight="80.0" prefWidth="80.0" ripplerFill="#804040" style="-fx-background-radius: 50%;" styleClass="button_basic" stylesheets="@../main/style.css" text="ADD" textFill="WHITE" AnchorPane.rightAnchor="237.0" AnchorPane.topAnchor="11.0">
+                     <font>
+                        <Font name="Lucida Console" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="User_Btn" buttonType="RAISED" layoutX="502.0" layoutY="9.0" prefHeight="80.0" prefWidth="80.0" ripplerFill="#360e0e" style="-fx-background-radius: 50%;" styleClass="button_basic" stylesheets="@../main/style.css" text="USER" textFill="WHITE" AnchorPane.rightAnchor="149.0" AnchorPane.topAnchor="9.0">
+                     <font>
+                        <Font name="Lucida Console" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label alignment="TOP_CENTER" layoutX="364.0" layoutY="22.0" text="USER" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="22.0">
+                     <font>
+                        <Font name="Lucida Console" size="48.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.38950276243093923" centerY="0.5379146919431279" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.9018640518188477" green="0.34539473056793213" blue="0.9210526347160339" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.007662835249042145">
+                                 <color>
+                                    <Color red="0.7332175970077515" green="0.2465277761220932" blue="0.75" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.6779239246356199">
+                                 <color>
+                                    <Color red="0.9647058844566345" green="0.38823530077934265" blue="0.38823530077934265" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9647058844566345" green="0.38823530077934265" blue="0.7490196228027344" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
